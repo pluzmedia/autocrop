@@ -28,12 +28,12 @@ HERE = os.path.abspath(os.path.dirname(__file__))
 
 # Import the README and use it as the long-description.
 # Note: this will only work if 'README.rst' is present in your MANIFEST.in file
-with open(os.path.join(HERE, "README.md"), encoding="utf-8") as f:
+with open(os.path.join(HERE, "README.md")) as f:
     long_description = "\n" + f.read()
 
 # Load the package's __version__.py module as a dictionary.
 about = {}
-with open(os.path.join(HERE, NAME, "__version__.py"), encoding="utf-8") as f:
+with open(os.path.join(HERE, NAME, "__version__.py")) as f:
     exec(f.read(), about)
 
 
